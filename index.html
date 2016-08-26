@@ -31,51 +31,47 @@
 
   <body>
     <div class="container">
+      <div class="row">
+        <div id="info" class="col-md-offset-6 col-md-6">
+          <h1 class="text-uppercase">Denis T.</h1>
+          <p>Professional Software Engineer</p>
 
-      <div>
-        <h1 class="text-uppercase">Denis T.</h1>
-        <p class="text-muted">Professional Software Developer</p>
+          <h2 class="text-uppercase">Skills</h1>
+          {% for skill in site.data.skills %}
+            <p>
+            <span class="label label-primary">{{ skill.skill }}</span>
 
-        <h2 class="text-uppercase">Skills</h1>
-        {% for skill in site.data.skills %}
-          <p>
-          <span class="label label-primary">{{ skill.skill }}</span>
+            {% for technology in skill.technologies %}
+              &nbsp;<span class="label label-info">{{ technology }}</span>
+            {% endfor %}
 
-          {% for technology in skill.technologies %}
-            &nbsp;<span class="label label-info">{{ technology }}</span>
+            {% if skill.like %}
+              &nbsp;<span class="label label-success" data-toggle="tooltip" title="Really like it!"><i class="fa fa-fw fa-thumbs-o-up"></i></span>
+            {% endif %}
+
+            </p>
           {% endfor %}
 
-          {% if skill.like %}
-            &nbsp;<span class="label label-success" data-toggle="tooltip" title="Really like this!"><i class="fa fa-fw fa-thumbs-o-up"></i></span>
-          {% endif %}
+          <h2 class="text-uppercase">Experience</h1>
+          <i>This part is not done yet. Please, stand by.</i>
 
-          </p>
-        {% endfor %}
+          <h2 class="text-uppercase">Interests</h1>
+          <i>This part is not done yet. Please, stand by.</i>
 
-        <h2 class="text-uppercase">Experience</h1>
-        <i>This part is not done yet. Please, stand by.</i>
-
-        <h2 class="text-uppercase">Interests</h1>
-        <i>This part is not done yet. Please, stand by.</i>
-
-        <h2 class="text-uppercase">Contacts</h1>
-        <p><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>&nbsp;Rostov-on-Don, Russian Federation<br><i class="fa fa-fw fa-envelope-o" aria-hidden="true"></i>&nbsp;<a href="mailto:job@denis-it.com">job@denis-it.com</a><br><i class="fa fa-fw fa-github" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://github.com/denis-it">denis-it</a></p>
+          <h2 class="text-uppercase">Contacts</h1>
+          <p><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>&nbsp;Rostov-on-Don, Russia<br><i class="fa fa-fw fa-envelope-o" aria-hidden="true"></i>&nbsp;<a href="mailto:job@denis-it.com">job@denis-it.com</a><br><i class="fa fa-fw fa-github" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://github.com/denis-it">denis-it</a></p>
+        </div>
       </div>
     </div><!-- /.container -->
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-
     <script src="https://use.fontawesome.com/c5923db704.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
 
-    <!-- Init bootstrap tooltips -->
     <script> $(function () { $('[data-toggle="tooltip"]').tooltip() }) </script>
   </body>
 </html>

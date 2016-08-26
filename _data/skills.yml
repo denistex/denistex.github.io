@@ -12,7 +12,10 @@
   technologies: [HTML 5, CSS 3, ECMA 6]
 
 - skill: Backend
-  technologies: [Node.js, PHP, AWS, MySQL, CouchDB]
+  technologies: [Node.js, PHP, AWS]
+
+- skill: Databases
+  technologies: [MySQL, CouchDB]
 
 - skill: E-Commerce
   technologies: [OpenCart, WooCommerce]
