@@ -1,0 +1,21 @@
+- skill: C/C++
+  technologies: [Boost, Qt]
+
+- skill: Python
+  technologies: [IPython, SciPy, PyQt, PySide]
+  like: True
+
+- skill: Java
+  technologies: [SE, EE, Android]
+
+- skill: Frontend
+  technologies: [HTML 5, CSS 3, ECMA 6]
+
+- skill: Backend
+  technologies: [Node.js, PHP, AWS, MySQL, CouchDB]
+
+- skill: E-Commerce
+  technologies: [OpenCart, WooCommerce]
+
+- skill: English
+  technologies: [Intermediate]
