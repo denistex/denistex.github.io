@@ -1,4 +1,7 @@
 ---
+title: Denis T. - Professional Software Engineer
+author: Denis T.
+email: job@denis-it.com
 ---
 
 <!DOCTYPE html>
@@ -8,11 +11,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Denis T. - Professional Software Developer">
-    <meta name="author" content="Denis T. <job@denis-it.com>">
+    <meta name="description" content="{{ page.title }}">
+    <meta name="author" content="{{ page.author }} <{{ page.email }}>">
     <link href="data:image/x-icon;base64,R0lGODlhEAAQAPEAAAAAAACE/wAAAAAAACH5BAlkAAIAIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIQhAIgiAIgiAIgiAIghAEgiAIgiAQCAQCgUAgCAQEAoFAIBAIBAKBQCAQBAICgUAgEAgEAoFAIBAIAgGBQCAQCAQCgUAgEAgEgYBAICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAQEBAQEBAgICAQECAgICAgEBAQEBAQICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAAh+QQJZAACACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIQhAIgiAIgiAIgiAIghAEgiAIgiAQCAQCgUAgCAQEAoFAIBAIBAKBQCAQBAICgUAgEAgEAoFAIBAIAgGBQCAQCAQCgUAgEAgEgYBAICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAA7" rel="icon" type="image/x-icon">
 
-    <title>Denis T. - Professional Software Developer</title>
+    <title>{{ page.title }}</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -59,7 +62,7 @@
           <i>This part is not done yet. Please, stand by.</i>
 
           <h2 class="text-uppercase">Contacts</h1>
-          <p><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>&nbsp;Rostov-on-Don, Russia<br><i class="fa fa-fw fa-envelope-o" aria-hidden="true"></i>&nbsp;<a href="mailto:job@denis-it.com">job@denis-it.com</a><br><i class="fa fa-fw fa-github" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://github.com/denis-it">denis-it</a></p>
+          <p><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>&nbsp;Rostov-on-Don, Russia<br><i class="fa fa-fw fa-envelope-o" aria-hidden="true"></i>&nbsp;<a href="mailto:{{ page.email }}">{{ page.email }}</a><br><i class="fa fa-fw fa-github" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://github.com/denis-it">denis-it</a></p>
         </div>
       </div>
     </div><!-- /.container -->
