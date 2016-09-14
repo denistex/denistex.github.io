@@ -14,4 +14,6 @@ tags: [Мысли вслух]
 
 Поэтому, если хотите в локомотив - приезжайте на главный вокзал, да пораньше, сразу после школы. Не ждите, когда вагон приедет к вам.
 
-![{{ page.title }}]({{ site.url }}/assets/loco.gif)
+<div class="text-center" markdown="1">
+![{{ page.title }}]({{ site.url }}/assets/2016-09-06-loco.gif)
+</div>

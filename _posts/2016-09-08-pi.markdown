@@ -6,6 +6,10 @@ excerpt_separator: <!--more-->
 tags: [Перевод, Docker]
 ---
 
+<div class="text-center" markdown="1">
+![{{ page.title }}]({{ site.url }}/assets/2016-09-08-pi.png)
+</div>
+
 На летней школе [FabLab](http://fablab61.ru/) так и не добрались до *Docker* и кросс-компиляции под *Raspberry Pi*, поэтому для интересующихся я сделал перевод вводной статьи на эту тему.
 
 Источник [здесь](http://hackaday.com/2016/09/01/how-to-use-docker-to-cross-compile-for-raspberry-pi-and-more/).
