@@ -1,0 +1,44 @@
+skills:
+  - skill: C/C++
+    technologies: [Boost, Qt]
+
+  - skill: Python
+    technologies: [IPython, SciPy, PyQt, PySide]
+    like: True
+
+  - skill: Java
+    technologies: [SE, EE, Android]
+
+  - skill: Frontend
+    technologies: [HTML 5, CSS 3, ECMA 6]
+
+  - skill: Backend
+    technologies: [Node.js, PHP, AWS]
+
+  - skill: Databases
+    technologies: [MySQL, CouchDB]
+
+  - skill: E-Commerce
+    technologies: [OpenCart, WooCommerce]
+
+  - skill: English
+    technologies: [Intermediate]
+
+experiences:
+  - company: eSignal
+    href: http://www.esignal.com/
+    description: "Desktop application development: C++ and Qt library."
+
+  - company: RoastLog
+    href: https://roastlog.com/
+    description: "Desktop application development: Python and PyQt binding."
+
+  - company: TradingView
+    href: https://tradingview.com/
+    description: "Full stack web development: HTML, CSS, JS, Java, Python."
+
+  - company: BoxyPOS
+    href: https://www.boxypos.com/
+    description: "Full stack web development, desktop and native Android applications: Angular, Java, CouchDB."
+
+interests: [Software Developent, Robots, Science]
