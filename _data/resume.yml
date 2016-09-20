@@ -25,20 +25,20 @@ skills:
     technologies: [Intermediate]
 
 experiences:
-  - company: eSignal
-    href: http://www.esignal.com/
-    description: "Desktop application development: C++ and Qt library."
-
-  - company: RoastLog
-    href: https://roastlog.com/
-    description: "Desktop application development: Python and PyQt binding."
-
   - company: TradingView
     href: https://tradingview.com/
     description: "Full stack web development: HTML, CSS, JS, Java, Python."
 
+  - company: eSignal
+    href: http://www.esignal.com/
+    description: "Desktop application development: C++ and Qt library."
+
   - company: BoxyPOS
     href: https://www.boxypos.com/
     description: "Full stack web development, desktop and native Android applications: Angular, Java, CouchDB."
+
+  - company: RoastLog
+    href: https://roastlog.com/
+    description: "Desktop application development: Python and PyQt binding."
 
 interests: [Software Developent, Robots, Science]
