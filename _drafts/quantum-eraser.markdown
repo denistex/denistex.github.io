@@ -3,11 +3,11 @@ layout: post
 title:  Квантовый ластик
 date:   2016-09-26 00:00:00 +0300
 excerpt_separator: <!--more-->
-tags: [Перевод, Физика]
+tags: [перевод, hackaday, физика]
 ---
 
 <div class="text-center" markdown="1">
-![{{ page.title }}]({{ site.url }}/assets/2016-09-26-quantum-eraser.png)
+![{{ page.title }}]({{ site.url }}/assets/2016-09-27-quantum-eraser.png)
 </div>
 
 Источник [здесь](http://hackaday.com/2016/09/07/the-quantum-eraser/).
