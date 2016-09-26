@@ -1,14 +1,11 @@
 ---
 layout: post
-title:  Использование Docker для кросс-компиляции под Raspberry Pi (и других целей)
-date:   2016-09-08 16:02:00 +0300
+title: Использование Docker для кросс-компиляции под Raspberry Pi (и других целей)
+image: /assets/2016-09-08-pi.png
+date: 2016-09-08 16:00:00 +0300
 excerpt_separator: <!--more-->
 tags: [перевод, hackaday, docker, raspberry pi]
 ---
-
-<div class="text-center" markdown="1">
-![{{ page.title }}]({{ site.url }}/assets/2016-09-08-pi.png)
-</div>
 
 На летней школе [FabLab](http://fablab61.ru/) так и не добрались до *Docker* и кросс-компиляции под *Raspberry Pi*, поэтому для интересующихся я сделал перевод вводной статьи на эту тему.
 

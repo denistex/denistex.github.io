@@ -14,8 +14,28 @@ layout: default
   </header>
 
   <div class="post-content" itemprop="articleBody">
+    {% if page.image %}
+      {% assign custom_url = site.url | append: site.baseurl %}
+      {% assign full_base_url = custom_url | default: site.github.url %}
+
+      <p class="text-center">
+        <img src="{{ page.image | prepend: full_base_url }}" alt="{{ page.title | escape }}" aria-hidden="true">
+      </p>
+    {% endif %}
+
     {{ content }}
   </div>
+
+  <script type="text/javascript">(function() {
+    if (window.pluso)if (typeof window.pluso.start == "function") return;
+    if (window.ifpluso==undefined) { window.ifpluso = 1;
+      var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+      s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+      s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+      var h=d[g]('body')[0];
+      h.appendChild(s);
+    }})();</script>
+  <div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,nocounter,theme=05" data-services="vkontakte,facebook,twitter,google,linkedin,delicious,evernote"></div>
 
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}

@@ -9,8 +9,21 @@
   {% endif %}
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <meta name="author" content="{{ page.author | default: site.author | escape }} <{{ page.email | default: site.email | escape }}>">
+
+  {% assign custom_url = site.url | append: site.baseurl %}
+  {% assign full_base_url = custom_url | default: site.github.url %}
+
+  <meta property="og:url" content="{{ page.url | prepend: full_base_url }}" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+  <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
+
+  {% if page.image %}
+    <meta property="og:image" content="{{ page.image | prepend: full_base_url }}" />
+    <link rel="image_src" href="{{ page.image | prepend: full_base_url }}" />
+  {% endif %}
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -18,8 +31,6 @@
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <link href="/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-  {% assign custom_url = site.url | append: site.baseurl %}
-  {% assign full_base_url = custom_url | default: site.github.url %}
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: full_base_url }}">
   <link rel="stylesheet" href="{{ "/css/style.css" | prepend: full_base_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: full_base_url }}">
