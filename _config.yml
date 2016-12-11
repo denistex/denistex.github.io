@@ -31,4 +31,5 @@ upwork_profile: _~01b439dfd5257d9801
 markdown: kramdown
 theme: minima
 
-disqus.shortname: denis-it
+disqus:
+  shortname: denis-it
