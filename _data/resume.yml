@@ -1,10 +1,11 @@
+_updated: "Dec 11, 2016 UTC"
+
 skills:
   - skill: C/C++
     technologies: [Boost, Qt]
 
   - skill: Python
     technologies: [IPython, SciPy, PyQt, PySide]
-    like: True
 
   - skill: Java
     technologies: [SE, EE, Android]
@@ -24,7 +25,7 @@ skills:
   - skill: English
     technologies: [Intermediate]
 
-experiences:
+experience:
   - company: TradingView
     href: https://tradingview.com/
     description: "Full stack web development: HTML, CSS, JS, Java, Python."
@@ -41,4 +42,4 @@ experiences:
     href: https://roastlog.com/
     description: "Desktop application development: Python and PyQt binding."
 
-interests: [Software Developent, Robots, Science]
+interests: [Software Development, Electronics and robots, Science]

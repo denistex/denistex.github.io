@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+    <script>
+      window.pdfdata = {
+        title: '{{ site.title }}',
+        author: '{{ site.author }}',
+        email: '{{ site.email }}',
+        url: '{{ site.url }}',
+        github_username: '{{ site.github_username }}',
+        telegram_username: '{{ site.telegram_username }}',
+        linkedin_username: '{{ site.linkedin_username }}',
+        upwork_profile: '{{ site.upwork_profile }}',
+        resume: JSON.parse('{{ site.data.resume | jsonify }}')
+      }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
+    <script src="js/blob-stream.js"></script>
+    <script src="js/pdfkit.js"></script>
+    <script src="js/resume.js"></script>
+
+  </body>
+
+</html>

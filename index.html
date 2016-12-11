@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: resume
 title: About me
 svg_width: 18
 ---
@@ -7,7 +7,7 @@ svg_width: 18
 <div class="home">
   <h1 class="page-heading">
     <span>{{ page.title }}</span>
-    <button class="btn btn-default pull-right"><i class="fa fa-file-pdf-o" style="color: darkred;" aria-hidden="true"></i>&nbsp;Download PDF</button>
+    <button class="btn btn-default pull-right" id="pdf"><i class="fa fa-file-pdf-o" style="color: darkred;" aria-hidden="true"></i>&nbsp;Download PDF</button>
   </h1>
 
   <h2 class="text-uppercase">Skills</h2>
@@ -22,9 +22,9 @@ svg_width: 18
 
   <h2 class="text-uppercase">Experience</h2>
   <ul>
-      {% for experience in site.data.resume.experiences %}
+      {% for exp in site.data.resume.experience %}
       <li>
-        <a target="_blank" href="{{ experience.href }}">{{ experience.company }}</a>:&nbsp;{{ experience.description }}
+        <a target="_blank" href="{{ exp.href }}">{{ exp.company }}</a>:&nbsp;{{ exp.description }}
       </li>
       {% endfor %}
   </ul>
