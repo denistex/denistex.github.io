@@ -7,7 +7,9 @@ svg_width: 18
 <div class="home">
   <h1 class="page-heading">
     <span>{{ page.title }}</span>
+    <!--
     <button class="btn btn-default pull-right" id="pdf"><i class="fa fa-file-pdf-o" style="color: darkred;" aria-hidden="true"></i>&nbsp;Download PDF</button>
+    -->
   </h1>
 
   <h2 class="text-uppercase">Skills</h2>
@@ -20,24 +22,54 @@ svg_width: 18
       {% endfor %}
   </ul>
 
+  <hr><br>
   <h2 class="text-uppercase">Experience</h2>
   <ul>
       {% for exp in site.data.resume.experience %}
       <li>
-        <a target="_blank" href="{{ exp.href }}">{{ exp.company }}</a>:&nbsp;{{ exp.description }}
+        <u>{{ exp.from }}&nbsp;&ndash;&nbsp;{{ exp.to }}</u>:
+        {% if exp.href %}
+          <a target="_blank" href="{{ exp.href }}">{{ exp.employer }}</a>
+        {% else %}
+          {{ exp.employer }}
+        {% endif %}
+
+        <br>
+        <i>{{ exp.description }}</i>
+
+        <br>
+        {% if exp.responsibilities %}
+          Responsibilities:
+          <ul>
+            {% for responsibility in exp.responsibilities %}
+              <li>{{ responsibility }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        <p>
+        {% for tag in exp.tags %}
+          <span class="label label-default">{{ tag }}</span>
+        {% endfor %}
+        </p>
       </li>
       {% endfor %}
   </ul>
 
-  <h2 class="text-uppercase">Interests</h2>
+  <hr><br>
+  <h2 class="text-uppercase">Education</h2>
   <ul>
-      {% for interest in site.data.resume.interests %}
+      {% for edu in site.data.resume.education %}
       <li>
-        {{ interest }}</a>
+        <u>{{ edu.from }}&nbsp;&ndash;&nbsp;{{ edu.to }}</u>:
+        <a target="_blank" href="{{ edu.href }}">{{ edu.school }}</a>
+        <br>
+        {{ edu.description }}
       </li>
       {% endfor %}
   </ul>
 
+  <hr><br>
   <h2 class="text-uppercase">Contacts</h2>
   <p><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>&nbsp;Rostov-on-Don, Russia<br>
     <i class="fa fa-fw fa-envelope-o" aria-hidden="true"></i>&nbsp;<a href="mailto:{{ site.email }}">{{ site.email }}</a><br>

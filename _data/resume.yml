@@ -1,4 +1,4 @@
-_updated: "Dec 11, 2016 UTC"
+_updated: "Jan 2, 2017 UTC"
 
 skills:
   - skill: C/C++
@@ -26,20 +26,78 @@ skills:
     technologies: [Intermediate]
 
 experience:
-  - company: TradingView
-    href: https://tradingview.com/
-    description: "Full stack web development: HTML, CSS, JS, Java, Python."
+  - from: Dec 2016
+    to: Present
+    employer: Mountain Interactive Inc.
+    href: http://mountaininteractive.ca/
+    description: "Integration of TradingView Charting Library for Stockscores web site"
+    tags: [JavaScript, Node.JS, Docker]
 
-  - company: eSignal
-    href: http://www.esignal.com/
-    description: "Desktop application development: C++ and Qt library."
+  - from: Oct 2016
+    to: Present
+    employer: FabLab61 Booking Bot
+    href: https://github.com/FabLab61/bookingbot
+    description: "Telegram bot for easy booking of FabLab resources"
+    responsibilities: [
+      "Project architecture and development"
+    ]
+    tags: [Perl, Telegram, Docker, Google API]
 
-  - company: BoxyPOS
+  - from: Feb 2016
+    to: Jul 2016
+    employer: Self-employed
+    description: "Online pet store deployment and development (now closed)"
+    tags: [PHP, MySQL, WooCommerce, OpenCart]
+
+  - from: Jan 2015
+    to: Dec 2015
+    employer: Boxy POS
     href: https://www.boxypos.com/
-    description: "Full stack web development, desktop and native Android applications: Angular, Java, CouchDB."
+    description: "Free point of sale for restaurants & coffee shops"
+    responsibilities: [
+      "Desktop software development with JavaFX",
+      "Android software development with Java",
+      "CouchDB interaction development",
+      "Jenkins CI deployment and support"
+    ]
+    tags: [Java, JavaFX, Android, CouchDB, Jenkins, AWS]
 
-  - company: RoastLog
+  - from: Dec 2011
+    to: Dec 2014
+    employer: TradingView
+    href: https://tradingview.com/
+    description: "Network where active traders exchange ideas to maximize profit"
+    responsibilities: [
+      "Frontend development with HTML, CSS and JS",
+      "Backend development with Java and Node.JS",
+      "Specialized language development with Java and ANTLR"
+    ]
+    tags: [HTML, JavaScript, Java, ANTLR, Node.JS, Python, Docker]
+
+  - from: Feb 2012
+    to: Jan 2013
+    employer: RoastLog
     href: https://roastlog.com/
-    description: "Desktop application development: Python and PyQt binding."
+    description: "Software that helps to control coffee roasting process"
+    responsibilities: [
+      "Desktop application development with Python and PyQt binding"
+    ]
+    tags: [Python, PyQt]
 
-interests: [Software Development, Electronics and robots, Science]
+  - from: Jul 2010
+    to: Nov 2011
+    employer: eSignal
+    href: http://www.esignal.com/
+    description: "Desktop stock charting software and trading platform"
+    responsibilities: [
+      "Charts module development",
+      "Statistics gathering module development, deployment and support"
+    ]
+    tags: [C++, Qt 4, Java, MySQL]
+
+education:
+  - from: 2005
+    to: 2010
+    school: "Don State Technical University"
+    href: http://www.donstu.ru/en/
+    description: "Bachelor degree in computer techniques and automatized systems software"
