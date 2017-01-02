@@ -25,22 +25,48 @@ $('#pdf').click(function () {
     document.body.removeChild(a)
   })
 
+  var indent = {indent: 20}
+  var indent2 = {indent: 40}
+  var indent3 = {indent: 60}
+
   var handlers = {
     skills: function (doc, values) {
       for (var i = 0; i < values.length; ++i) {
         regular(doc, '- ' + values[i].skill + ': ' +
-            values[i].technologies.join(', '), {indent: 20})
+            values[i].technologies.join(', '), indent)
       }
     },
     experience: function (doc, values) {
       for (var i = 0; i < values.length; ++i) {
-        regular(doc, '- ' + values[i].company + ' (' + values[i].href + '): ' +
-            values[i].description, {indent: 20})
+        regular(doc, '- ' + values[i].from + ' - ' + values[i].to + ':', indent)
+
+        regular(doc, values[i].employer +
+            (values[i].href ? ' (' + values[i].href + ')' : ''), indent2)
+
+        regular(doc, values[i].description, indent2)
+
+        if (values[i].responsibilities) {
+          regular(doc, 'Responsibilities:', indent2)
+          for (var j = 0; j < values[i].responsibilities.length; ++j) {
+            regular(doc, '- ' + values[i].responsibilities[j], indent3)
+          }
+        }
+
+        regular(doc, 'Tags: ' + values[i].tags.join(', '), indent2)
+
+        doc.moveDown()
       }
     },
-    interests: function (doc, values) {
+    education: function (doc, values) {
       for (var i = 0; i < values.length; ++i) {
-        regular(doc, '- ' + values[i], {indent: 20})
+        regular(doc, '- ' + values[i].from + ' - ' + values[i].to + ':', indent)
+
+        regular(doc, values[i].school +
+            (values[i].href ? ' (' + values[i].href + ')' : ''), indent2)
+
+        regular(doc, values[i].description, indent2)
+
+        doc.moveDown()
       }
     }
   }
