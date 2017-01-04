@@ -64,7 +64,7 @@ $('#pdf').click(function () {
 
         tags(doc, '[ ' + values[i].tags.join(' | ') + ' ]')
 
-        doc.moveDown()
+        doc.moveDown(1.5)
       }
     },
     education: function (doc, values) {
@@ -227,7 +227,7 @@ function href (doc, value) {
 }
 
 function responsibility (doc, value) {
-  var values = wordwrap(value, 60)
+  var values = wordwrap(value, 70)
   for (var i = 0; i < values.length; ++i) {
     doc.moveDown(0.2)
       .fontSize(13)
