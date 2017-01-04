@@ -36,8 +36,8 @@ svg_width: 18
         <i>{{ exp.description }}</i>
 
         <br>
+        {{ exp.position }}
         {% if exp.responsibilities %}
-          Responsibilities:
           <ul>
             {% for responsibility in exp.responsibilities %}
               <li>{{ responsibility }}</li>
@@ -62,17 +62,17 @@ svg_width: 18
         <u>{{ edu.from }}&nbsp;&ndash;&nbsp;{{ edu.to }}</u>:
         <a target="_blank" href="{{ edu.href }}">{{ edu.school }}</a>
         <br>
-        {{ edu.description }}
+        <i>{{ edu.description }}</i>
       </li>
       {% endfor %}
   </ul>
 
   <hr><br>
   <h2 class="text-uppercase">Contacts</h2>
-  <p><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>&nbsp;Rostov-on-Don, Russia<br>
+  <p><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>&nbsp;{{ site.data.resume.contacts.location }}<br>
     <i class="fa fa-fw fa-envelope-o" aria-hidden="true"></i>&nbsp;<a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
     <i class="fa fa-fw fa-github" aria-hidden="true"></i>&nbsp;follow me on <a target="_blank" href="https://github.com/{{ site.github_username }}">github</a><br>
-    <img src="images/telegram.svg" alt="Telegram Logo" width="{{ page.svg_width }}" aria-hidden="true">&nbsp;chat me in <a target="_blank" href="http://telegram.me/{{ site.telegram_username }}">telegram</a><br>
-    <i class="fa fa-fw fa-linkedin" aria-hidden="true"></i>&nbsp;connect on <a target="_blank" href="https://ru.linkedin.com/in/{{ site.linkedin_username }}">linkedin</a><br>
-    <img src="images/upwork.svg" alt="Upwork Logo" width="{{ page.svg_width }}" aria-hidden="true">&nbsp;hire me on <a target="_blank" href="http://www.upwork.com/o/profiles/users/{{ site.upwork_profile }}">upwork</a></p>
+    <img src="images/telegram.svg" alt="Telegram Logo" width="{{ page.svg_width }}" aria-hidden="true">&nbsp;chat me in <a target="_blank" href="http://telegram.me/{{ site.data.resume.contacts.telegram }}">telegram</a><br>
+    <i class="fa fa-fw fa-linkedin" aria-hidden="true"></i>&nbsp;connect on <a target="_blank" href="https://ru.linkedin.com/in/{{ site.data.resume.contacts.linkedin}}">linkedin</a><br>
+    <img src="images/upwork.svg" alt="Upwork Logo" width="{{ page.svg_width }}" aria-hidden="true">&nbsp;hire me on <a target="_blank" href="http://www.upwork.com/o/profiles/users/{{ site.data.resume.contacts.upwork}}">upwork</a></p>
 </div>

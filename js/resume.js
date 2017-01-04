@@ -1,3 +1,14 @@
+var C = {
+  INDENT:  [0, 60, 80, 150],
+
+  LEFT: 25,
+  RIGHT: 588,
+
+  WIDTH: 460,
+  EXTENDED_WIDTH: 535,
+  TAGS_WIDTH: 588,
+}
+
 $('#pdf').click(function () {
   var updated = new Date(window.pdfdata.resume._updated)
 
@@ -10,8 +21,8 @@ $('#pdf').click(function () {
       ModDate: updated
     }
   })
-  var stream = doc.pipe(blobStream())
 
+  var stream = doc.pipe(blobStream())
   stream.on('finish', function () {
     var blob = stream.toBlob('application/pdf')
     var url = stream.toBlobURL('application/pdf')
@@ -25,84 +36,239 @@ $('#pdf').click(function () {
     document.body.removeChild(a)
   })
 
-  var indent = {indent: 20}
-  var indent2 = {indent: 40}
-  var indent3 = {indent: 60}
-
   var handlers = {
     skills: function (doc, values) {
       for (var i = 0; i < values.length; ++i) {
-        regular(doc, '- ' + values[i].skill + ': ' +
-            values[i].technologies.join(', '), indent)
+        skill(doc,
+            '- ' + values[i].skill + ': ' + values[i].technologies.join(', '))
       }
     },
     experience: function (doc, values) {
       for (var i = 0; i < values.length; ++i) {
-        regular(doc, '- ' + values[i].from + ' - ' + values[i].to + ':', indent)
-
-        regular(doc, values[i].employer +
-            (values[i].href ? ' (' + values[i].href + ')' : ''), indent2)
-
-        regular(doc, values[i].description, indent2)
+        timestamp(doc, values[i].from + ' - ' + values[i].to)
+        organization(doc, values[i].employer)
+        description(doc, values[i].description)
+        position(doc, values[i].position)
 
         if (values[i].responsibilities) {
-          regular(doc, 'Responsibilities:', indent2)
+          doc.moveDown(0.2)
           for (var j = 0; j < values[i].responsibilities.length; ++j) {
-            regular(doc, '- ' + values[i].responsibilities[j], indent3)
+            responsibility(doc, '- ' + values[i].responsibilities[j])
           }
+          doc.moveDown(0.2)
         }
 
-        regular(doc, 'Tags: ' + values[i].tags.join(', '), indent2)
+        if (values[i].href) {
+          href(doc, values[i].href)
+        }
+
+        tags(doc, '[ ' + values[i].tags.join(' | ') + ' ]')
 
         doc.moveDown()
       }
     },
     education: function (doc, values) {
       for (var i = 0; i < values.length; ++i) {
-        regular(doc, '- ' + values[i].from + ' - ' + values[i].to + ':', indent)
+        timestamp(doc, values[i].from + ' - ' + values[i].to)
+        organization(doc, values[i].school)
 
-        regular(doc, values[i].school +
-            (values[i].href ? ' (' + values[i].href + ')' : ''), indent2)
+        if (values[i].href) {
+          href(doc, values[i].href)
+        }
 
-        regular(doc, values[i].description, indent2)
+        description(doc, values[i].description)
 
         doc.moveDown()
       }
+    },
+    contacts: function (doc, values) {
+      contact(doc, 'Location', values.location)
+      contact(doc, 'Website', window.pdfdata.url)
+      contact(doc, 'Email', window.pdfdata.email)
+      contact(doc, 'GitHub', '@' + window.pdfdata.github_username)
+      contact(doc, 'Telegram', '@' + values.telegram)
+      contact(doc, 'LinkedIn', '@' + values.linkedin)
     }
   }
 
+  startline(doc)
   title(doc, window.pdfdata.title)
-  regular(doc, window.pdfdata.email)
+  email(doc, window.pdfdata.email)
 
   for (key in window.pdfdata.resume) {
     if (!key.startsWith('_')) {
-      header1(doc, key.toUpperCase())
+      section(doc, key.toUpperCase())
     }
     if (handlers[key]) {
       handlers[key](doc, window.pdfdata.resume[key])
     }
   }
 
+  section(doc, 'METAINFO')
+  metainfo(doc, 'Updated', window.pdfdata.resume._updated)
+
   doc.end()
 })
 
-function text (doc, size, value, style) {
-  doc.fontSize(size)
-  doc.text(value, style)
+function wordwrap (input, width) {
+  var result = ['']
+
+  var arr = input.split(' ')
+  for (var i = 0; i < arr.length; ++i) {
+    var extended = (result[result.length - 1] + ' ' + arr[i]).trim()
+    if (extended.length < width) {
+      result[result.length - 1] = extended
+    } else {
+      result.push(arr[i])
+    }
+  }
+
+  return result
+}
+
+function getStyle (indent) {
+  return {
+    indent: C.INDENT[indent],
+    width: C.WIDTH
+  }
+}
+
+function startline (doc) {
+  doc.moveUp(3)
+    .moveTo(C.LEFT, doc.y)
+    .lineTo(C.RIGHT, doc.y)
+    .lineWidth(10)
+    .strokeColor('gray')
+    .stroke()
+    .moveDown(1.5)
 }
 
 function title (doc, value) {
-  text(doc, 18, value)
+  doc.fontSize(18)
+    .font('Times-Roman')
+    .fillColor('black')
+    .text(value, C.LEFT, doc.y, getStyle(0))
 }
 
-function header1 (doc, value) {
+function email (doc, value) {
+  doc.moveDown(0.2)
+    .fontSize(14)
+    .font('Times-Roman')
+    .fillColor('black')
+    .text(value, C.LEFT, doc.y, getStyle(0))
+    .moveDown(0.2)
+}
+
+function section (doc, value) {
   doc.moveDown()
-  text(doc, 16, value)
-  doc.moveDown(0.2)
+    .fontSize(16)
+    .font('Times-Bold')
+    .fillColor('gray')
+    .text(value, C.LEFT, doc.y, getStyle(0))
+    .moveDown(0.2)
+    .moveTo(C.LEFT, doc.y - 5)
+    .lineTo(C.RIGHT, doc.y - 5)
+    .lineWidth(1)
+    .strokeColor('gray')
+    .stroke()
 }
 
-function regular (doc, value, style) {
+function skill (doc, value) {
   doc.moveDown(0.2)
-  text(doc, 14, value, style)
+    .fontSize(13)
+    .font('Times-Roman')
+    .fillColor('black')
+    .text(value, C.LEFT, doc.y, getStyle(1))
+    .moveDown(0.2)
+}
+
+function timestamp (doc, value) {
   doc.moveDown(0.2)
+    .fontSize(13)
+    .font('Times-Roman')
+    .fillColor('gray')
+    .text(value, {align: 'right', width: C.EXTENDED_WIDTH})
+    .moveUp(1.2)
+}
+
+function organization (doc, value) {
+  doc.moveDown(0.2)
+    .fontSize(14)
+    .font('Times-Bold')
+    .fillColor('black')
+    .text(value, C.LEFT, doc.y, getStyle(1))
+    .moveDown(0.2)
+}
+
+function position (doc, value) {
+  doc.fontSize(13)
+    .font('Times-Roman')
+    .fillColor('black')
+    .text(value, C.LEFT, doc.y, getStyle(2))
+}
+
+function description (doc, value) {
+  var values = wordwrap(value, 70)
+  for (var i = 0; i < values.length; ++i) {
+    doc.fontSize(13)
+      .font('Times-Italic')
+      .fillColor('black')
+      .text(values[i], C.LEFT, doc.y, getStyle(2))
+      .moveDown(0.2)
+    }
+}
+
+function href (doc, value) {
+  doc.fontSize(12)
+    .font('Courier')
+    .fillColor('black')
+    .text(value, C.LEFT, doc.y, getStyle(2))
+    .moveDown(0.4)
+}
+
+function responsibility (doc, value) {
+  var values = wordwrap(value, 60)
+  for (var i = 0; i < values.length; ++i) {
+    doc.moveDown(0.2)
+      .fontSize(13)
+      .font('Times-Roman')
+      .fillColor('black')
+      .text(values[i], C.LEFT, doc.y, getStyle(2))
+      .moveDown(0.2)
+  }
+}
+
+function tags (doc, value) {
+  doc.moveDown(0.2)
+    .fontSize(12)
+    .font('Courier')
+    .fillColor('black')
+    .text(value, C.LEFT, doc.y, {indent: C.INDENT[2], width: C.TAGS_WIDTH})
+    .moveDown(0.2)
+}
+
+function contact (doc, name, value) {
+  doc.moveDown(0.2)
+    .fontSize(13)
+    .font('Times-Bold')
+    .fillColor('gray')
+    .text(name + ':', C.LEFT, doc.y, getStyle(1))
+    .moveUp(1.0)
+    .font('Times-Roman')
+    .fillColor('black')
+    .text(value, C.LEFT, doc.y, getStyle(3))
+    .moveDown(0.2)
+}
+
+function metainfo (doc, name, value) {
+  doc.moveDown(0.2)
+    .fontSize(13)
+    .font('Times-Bold')
+    .fillColor('gray')
+    .text(name + ':', C.LEFT, doc.y, getStyle(1))
+    .moveUp(1.0)
+    .font('Times-Roman')
+    .fillColor('black')
+    .text(value, C.LEFT, doc.y, getStyle(3))
+    .moveDown(0.2)
 }
