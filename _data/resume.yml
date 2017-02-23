@@ -14,7 +14,7 @@ skills:
     technologies: [HTML 5, CSS 3, ECMA 6]
 
   - skill: Backend
-    technologies: [Node.JS, PHP, Docker, AWS]
+    technologies: [Node.js, Docker, Perl, PHP, AWS]
 
   - skill: Databases
     technologies: [MySQL, CouchDB]
@@ -22,8 +22,14 @@ skills:
   - skill: E-Commerce
     technologies: [OpenCart, WooCommerce]
 
-  - skill: English
-    technologies: [Intermediate]
+  - skill: Continious Integration
+    technologies: [Jenkins, Bamboo]
+
+  - skill: Agile
+    technologies: [Scrum, Kanban]
+
+  - skill: Languages
+    technologies: [English (intermediate), Russian (native)]
 
 experience:
   - from: Dec 2016
@@ -35,7 +41,7 @@ experience:
     responsibilities: [
       "Integration of TradingView Charting Library"
     ]
-    tags: [JavaScript, Node.JS, Docker]
+    tags: [JS, Node.js, Docker]
 
   - from: Oct 2016
     to: Present
@@ -77,10 +83,10 @@ experience:
     description: "Network where active traders exchange ideas to maximize profit"
     responsibilities: [
       "Frontend development with HTML, CSS and JS",
-      "Backend development with Java, Python and Node.JS",
+      "Backend development with Java, Python and Node.js",
       "Specialized language development with Java and ANTLR"
     ]
-    tags: [HTML, JavaScript, Java, ANTLR, Node.JS, Python, Docker]
+    tags: [HTML, JS, Java, Node.js, Python, Jenkins, Docker, Scrum]
 
   - from: Feb 2012
     to: Jan 2013
@@ -103,7 +109,7 @@ experience:
       "Chart module development",
       "Statistics gathering subsystem development, deployment and support"
     ]
-    tags: [C++, Qt 4, Java, MySQL]
+    tags: [C++, Qt 4, Java, MySQL, Jenkins, Scrum]
 
 education:
   - from: Sep 2005
