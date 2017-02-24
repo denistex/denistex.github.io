@@ -1,11 +1,11 @@
-_updated: "Feb 23, 2017 UTC"
+_updated: "Feb 24, 2017 UTC"
 
 skills:
+  - skill: JVM
+    technologies: [Scala, Java SE, JavaFX, Android]
+
   - skill: C/C++
     technologies: [Boost, Qt]
-
-  - skill: JVM
-    technologies: [Java SE, JavaFX, Scala, Android]
 
   - skill: Python
     technologies: [IPython, SciPy, PyQt, PySide]
@@ -32,8 +32,19 @@ skills:
     technologies: [English (intermediate), Russian (native)]
 
 experience:
-  - from: Dec 2016
+  - from: Oct 2016
     to: Present
+    employer: FabLab61 Booking Bot
+    href: https://github.com/FabLab61/bookingbot
+    position: Lead Software Engineer
+    description: "Telegram bot for easy booking of FabLab resources (pet project)"
+    responsibilities: [
+      "Project architecture and development"
+    ]
+    tags: [Perl, Telegram, Docker, Google Calendar API]
+
+  - from: Dec 2016
+    to: Feb 2017
     employer: Mountain Interactive Inc.
     href: http://mountaininteractive.ca/
     position: Software Engineer
@@ -42,17 +53,6 @@ experience:
       "Integration of TradingView Charting Library"
     ]
     tags: [JS, Node.js, Docker]
-
-  - from: Oct 2016
-    to: Present
-    employer: FabLab61 Booking Bot
-    href: https://github.com/FabLab61/bookingbot
-    position: Lead Software Engineer
-    description: "Telegram bot for easy booking of FabLab resources"
-    responsibilities: [
-      "Project architecture and development"
-    ]
-    tags: [Perl, Telegram, Docker, Google Calendar API]
 
   - from: Feb 2016
     to: Jul 2016
