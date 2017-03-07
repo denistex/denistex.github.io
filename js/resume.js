@@ -88,6 +88,7 @@ $('#pdf').click(function () {
       contact(doc, 'GitHub', '@' + window.pdfdata.github_username)
       contact(doc, 'Telegram', '@' + values.telegram)
       contact(doc, 'LinkedIn', '@' + values.linkedin)
+      contact(doc, 'Twitter', '@' + values.twitter)
     }
   }
 
