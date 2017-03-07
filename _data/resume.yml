@@ -1,5 +1,9 @@
 _updated: "Mar 7, 2017 UTC"
 
+summary:
+    header: "Full-stack software engineer with wide experience in many technologies and languages."
+    text: "I am following T-shaped skills model - I mostly excited about Scala (Akka, Play!) so I spend much time working with it. I am also keeping up in C and Node.js trends and can start working with them very quickly. I read some news and watch videos about other technologies from time to time to have wide area of thought (Python, PHP, Perl), but I do not use them every day. I am free to use Linux, Mac OS or Windows and ready to work with Git, Jenkins, Bugzilla, Redmine, Jira, Bamboo, Trello, GitHub or BitBucket. Ready for relocation (Europe or US)."
+
 skills:
   - skill: JVM
     technologies: [Scala, Java SE, JavaFX, Android]
@@ -33,15 +37,16 @@ skills:
 
 experience:
   - from: Oct 2016
-    to: Present
+    to: Feb 2017
     employer: FabLab61 Booking Bot
     href: https://github.com/FabLab61/bookingbot
-    position: Lead Software Engineer
+    position: Lead Software Engineer (petproject)
     description: "Telegram bot for easy booking of FabLab resources (pet project)"
     responsibilities: [
       "Project architecture and development"
     ]
     tags: [Perl, Telegram, Docker, Google Calendar API]
+    span: 0.5
 
   - from: Dec 2016
     to: Feb 2017
@@ -87,6 +92,7 @@ experience:
       "Specialized language development with Java and ANTLR"
     ]
     tags: [HTML, JS, Java, Node.js, Python, Jenkins, Docker, Scrum]
+    span: 3.5
 
   - from: Feb 2012
     to: Jan 2013

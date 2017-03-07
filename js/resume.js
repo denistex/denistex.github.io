@@ -4,9 +4,12 @@ var C = {
   LEFT: 25,
   RIGHT: 588,
 
-  WIDTH: 460,
+  WIDTH: 450,
   EXTENDED_WIDTH: 535,
   TAGS_WIDTH: 588,
+
+  SUMMARY_LEFT: 85,
+  SUMMARY_WIDTH: 390,
 }
 
 $('#pdf').click(function () {
@@ -37,6 +40,10 @@ $('#pdf').click(function () {
   })
 
   var handlers = {
+    summary: function (doc, value) {
+      summ(doc, value.header)
+      summ(doc, value.text)
+    },
     skills: function (doc, values) {
       for (var i = 0; i < values.length; ++i) {
         skill(doc,
@@ -65,6 +72,10 @@ $('#pdf').click(function () {
         tags(doc, '[ ' + values[i].tags.join(' | ') + ' ]')
 
         doc.moveDown(1.5)
+
+		if (values[i].span) {
+			doc.moveDown(values[i].span)
+		}
       }
     },
     education: function (doc, values) {
@@ -78,7 +89,7 @@ $('#pdf').click(function () {
 
         description(doc, values[i].description)
 
-        doc.moveDown()
+        doc.moveDown(0.5)
       }
     },
     contacts: function (doc, values) {
@@ -130,7 +141,7 @@ function wordwrap (input, width) {
 function getStyle (indent) {
   return {
     indent: C.INDENT[indent],
-    width: C.WIDTH
+    width: C.WIDTH,
   }
 }
 
@@ -161,7 +172,7 @@ function email (doc, value) {
 }
 
 function section (doc, value) {
-  doc.moveDown()
+  doc.moveDown(0.8)
     .fontSize(16)
     .font('Times-Bold')
     .fillColor('gray')
@@ -172,6 +183,21 @@ function section (doc, value) {
     .lineWidth(1)
     .strokeColor('gray')
     .stroke()
+    .moveDown(0.2)
+}
+
+function summ (doc, value) {
+  var style = {
+    indent: C.INDENT[0],
+    width: C.SUMMARY_WIDTH,
+	align: 'justify'
+  }
+  doc.moveDown(0.2)
+    .fontSize(13)
+    .font('Times-Roman')
+    .fillColor('black')
+    .text(value, C.SUMMARY_LEFT, doc.y, style)
+    .moveDown(0.2)
 }
 
 function skill (doc, value) {

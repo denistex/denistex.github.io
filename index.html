@@ -4,7 +4,7 @@ title: Resume
 svg_width: 18
 ---
 
-<div class="home">
+<div class="home resume">
   <h1 class="page-heading">
     <span>{{ page.title }}</span>
     <a class="btn btn-default pull-right" href="/Denis T. - Software Engineer - Resume (CV).pdf" download><i class="fa fa-file-pdf-o" style="color: darkred;" aria-hidden="true"></i>&nbsp;Download PDF</a>
@@ -13,6 +13,12 @@ svg_width: 18
     -->
   </h1>
 
+  <br><hr><br>
+  <h2 class="text-uppercase">Summary</h2>
+  <p>{{ site.data.resume.summary.header }}</p>
+  <p>{{ site.data.resume.summary.text }}</p>
+
+  <hr><br>
   <h2 class="text-uppercase">Skills</h2>
 
   <ul>
