@@ -22,7 +22,7 @@
         email: '{{ site.email }}',
         url: '{{ site.url }}',
         github_username: '{{ site.github_username }}',
-        resume: JSON.parse('{{ site.data.resume | jsonify }}')
+        resume: {{ site.data.resume | jsonify }}
       }
     </script>
 
