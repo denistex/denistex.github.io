@@ -1,41 +1,64 @@
-_updated: "Mar 20, 2017 UTC"
+_updated: "Sep 5, 2017"
 
 summary:
     header: "Full-stack software engineer with wide experience in many technologies and languages."
-    text: "I am following T-shaped skills model - I mostly excited about Scala (Akka, Play!) so I spend much time working with it. I am also keeping up in C and Node.js trends and can start working with them very quickly. I read some news and watch videos about other technologies from time to time to have wide area of thought (Python, PHP, Perl), but I do not use them every day. I am free to use Linux, Mac OS or Windows and ready to work with Git, Jenkins, Bugzilla, Redmine, Jira, Bamboo, Trello, GitHub or BitBucket."
+    text: "I am following T-shaped skills model - I mostly excited about Scala and its ecosystem (Scalaz, Cats, Shapeless, Akka, Slick, Doobie, etc.) so I spend much time working with it. I am also keeping up in C and Javascript / Node.js trends and can start working with them very quickly. I read some news and watch videos about other technologies from time to time to have wide area of thought (Python, PHP, Perl), but I do not use all of them in my every day work. I am free to use Linux, Mac OS or Windows and ready to work with Git, Jenkins, Circle, Bugzilla, Redmine, Jira, Bamboo, Trello, GitHub or BitBucket."
 
 skills:
   - skill: JVM
     technologies: [Scala, Java SE, JavaFX, Android]
 
   - skill: C/C++
-    technologies: [Boost, Qt]
+    technologies: [Desktop, Embedded, Boost, Qt]
 
   - skill: Python
     technologies: [IPython, SciPy, PyQt, PySide]
 
   - skill: Frontend
-    technologies: [HTML 5, CSS 3, ECMA 6]
+    technologies: [HTML 5, CSS 3, ECMA 6, Angular 4]
 
   - skill: Backend
-    technologies: [Node.js, Docker, Perl, PHP, AWS]
+    technologies: [Docker, AWS, Kubernetes, Node.js, Perl, PHP]
 
   - skill: Databases
-    technologies: [MySQL, CouchDB]
+    technologies: [MySQL, CouchDB, DynamoDB]
+
+  - skill: Continious Integration
+    technologies: [Jenkins, Bamboo]
+
+  - skill: Testing
+    technologies: [TDD, BDD]
 
   - skill: E-Commerce
     technologies: [OpenCart, WooCommerce]
 
-  - skill: Continious Integration
-    technologies: [Jenkins, Bamboo]
+  - skill: Tools
+    technologies: [Git, Vim, Bash, ADR]
 
   - skill: Agile
     technologies: [Scrum, Kanban]
 
   - skill: Languages
-    technologies: [English (intermediate), Russian (native)]
+    technologies: [English (conversational), Russian (native)]
 
 experience:
+  - from: May 2017
+    to: Current
+    employer: VATBox Ltd.
+    href: https://vatbox.com/
+    position: SuperStar Scala Developer
+    description: "Global cloud-based provider of automated VAT recovery"
+    responsibilities: [
+      "Projects leading and responsibility",
+      "Backend development with Scala, Akka and Slick",
+      "Database schema development",
+      "Projects deployment on AWS using Kubernetes",
+      "Documentation writing",
+      "Working in a distributed team"
+    ]
+    tags: [Scala, Slick, MySQL, Docker, Kubernetes]
+    span: 0.5
+
   - from: Oct 2016
     to: Feb 2017
     employer: FabLab61 Booking Bot
@@ -58,6 +81,7 @@ experience:
       "Integration of TradingView Charting Library"
     ]
     tags: [JS, Node.js, Docker]
+    span: 0.5
 
   - from: Feb 2016
     to: Jul 2016
@@ -65,6 +89,7 @@ experience:
     position: Founder & Software Engineer
     description: "Online pet store deployment and development (now closed)"
     tags: [PHP, MySQL, WooCommerce, OpenCart]
+    span: 0.5
 
   - from: Jan 2015
     to: Dec 2015
@@ -92,7 +117,6 @@ experience:
       "Specialized language development with Java and ANTLR"
     ]
     tags: [HTML, JS, Java, Node.js, Python, Jenkins, Docker, Scrum]
-    span: 3.5
 
   - from: Feb 2012
     to: Jan 2013

@@ -73,9 +73,9 @@ $('#pdf').click(function () {
 
         doc.moveDown(1.5)
 
-		if (values[i].span) {
-			doc.moveDown(values[i].span)
-		}
+        if (values[i].span) {
+          doc.moveDown(values[i].span)
+        }
       }
     },
     education: function (doc, values) {
@@ -190,7 +190,7 @@ function summ (doc, value) {
   var style = {
     indent: C.INDENT[0],
     width: C.SUMMARY_WIDTH,
-	align: 'justify'
+    align: 'justify'
   }
   doc.moveDown(0.2)
     .fontSize(13)
