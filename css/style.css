@@ -7,6 +7,6 @@
 	font-size: 24px;
 }
 
-label.nav-trigger {
+nav.site-nav > label {
 	display: none;
 }
