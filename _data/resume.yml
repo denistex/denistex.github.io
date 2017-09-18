@@ -1,4 +1,4 @@
-_updated: "Sep 5, 2017"
+_updated: "Sep 18, 2017"
 
 summary:
     header: "Full-stack software engineer with 8+ years of experience."
@@ -46,7 +46,7 @@ experience:
     to: Current
     employer: VATBox Ltd.
     href: https://vatbox.com/
-    position: SuperStar Scala Developer
+    position: Senior Scala Developer
     description: "Global cloud-based provider of automated VAT recovery"
     responsibilities: [
       "Projects leading and responsibility",
