@@ -1,7 +1,7 @@
-_updated: "Sep 18, 2017"
+_updated: "Jan 22, 2018"
 
 summary:
-    header: "Full-stack software engineer with 8+ years of experience."
+    header: "Full-stack software engineer with 9+ years of experience."
     text: "I mostly excited about functional programming, Scala and its ecosystem (Scalaz, Cats, Shapeless, Akka, Slick, Doobie, etc.), have good problems solving and projects responsibility skills. I am learning and evolving every day to provide actual and high-level results to the customers. I follow T-shaped skills model: besides Scala and its environment I am keeping up in C and Javascript / Node.js trends as well so can start working with them pretty quickly. I read news, listen podcasts and watch videos about different technologies to have wide area of thought (Perl, PHP, Python, Rust). Free to use Linux, Mac OS or Windows and ready to work with Git, AWS, Jenkins, Circle, Bugzilla, Redmine, Jira, Bamboo, Trello, GitHub, BitBucket and other commonly used services."
 
 skills:
@@ -21,7 +21,7 @@ skills:
     technologies: [Docker, AWS, Kubernetes, Node.js, Perl, PHP]
 
   - skill: Databases
-    technologies: [MySQL, CouchDB, DynamoDB]
+    technologies: [MySQL, MongoDB, CouchDB, DynamoDB]
 
   - skill: Continious Integration
     technologies: [Jenkins, Bamboo]
@@ -42,11 +42,23 @@ skills:
     technologies: [English (conversational), Russian (native)]
 
 experience:
+  - from: Oct 2017
+    to: Current
+    employer: IBTrader
+    position: Scala Developer
+    description: "Platform for automated trading using Interactive Brokers API"
+    responsibilities: [
+      "Backend development with Scala and Akka Streams",
+      "Documentation writing",
+      "Working in a distributed team"
+    ]
+    tags: [Scala, Akka, Cats, Shapeless]
+
   - from: May 2017
     to: Current
     employer: VATBox Ltd.
     href: https://vatbox.com/
-    position: Senior Scala Developer
+    position: Scala Developer
     description: "Global cloud-based provider of automated VAT recovery"
     responsibilities: [
       "Projects leading and responsibility",
@@ -57,6 +69,19 @@ experience:
       "Working in a distributed team"
     ]
     tags: [Scala, Slick, MySQL, Docker, Kubernetes]
+
+  - from: Nov 2017
+    to: Dec 2017
+    employer: FXEmpire
+    href: https://www.fxempire.com/
+    position: Node.js Developer
+    description: "Custom datafeed for TradingView Charting Library"
+    responsibilities: [
+      "Development of Node.js Rest API service using Express",
+      "Working with Mongo DB using Mongoose"
+    ]
+    tags: [Node.js, Express, Mongo, Mongoose]
+
 
   - from: Oct 2016
     to: Feb 2017
