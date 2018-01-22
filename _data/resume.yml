@@ -93,6 +93,7 @@ experience:
       "Project architecture and development"
     ]
     tags: [Perl, Telegram, Docker, Google Calendar API]
+    span: 2.2
 
   - from: Dec 2016
     to: Feb 2017
