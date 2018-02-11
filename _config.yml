@@ -15,18 +15,18 @@
 # in the templates via {{ site.myvariable }}.
 title: Denis T. - Professional Software Engineer
 author: Denis T.
-email: dev@denis-it.com
+email: me@fppden.info
 description: > # this means to ignore newlines until "baseurl:"
   VIVA LA ROBOLUTION!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://denis-it.com" # the base hostname & protocol for your site
+url: "http://fppden.info" # the base hostname & protocol for your site
 favicon: "data:image/x-icon;base64,R0lGODlhEAAQAPEAAAAAAACE/wAAAAAAACH5BAlkAAIAIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIQhAIgiAIgiAIgiAIghAEgiAIgiAQCAQCgUAgCAQEAoFAIBAIBAKBQCAQBAICgUAgEAgEAoFAIBAIAgGBQCAQCAQCgUAgEAgEgYBAICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAQEBAQEBAgICAQECAgICAgEBAQEBAQICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAAh+QQJZAACACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIQhAIgiAIgiAIgiAIghAEgiAIgiAQCAQCgUAgCAQEAoFAIBAIBAKBQCAQBAICgUAgEAgEAoFAIBAIAgGBQCAQCAQCgUAgEAgEgYBAICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAA7"
 
-github_username: denis-it
+github_username: fppden
 
 # Build settings
 markdown: kramdown
 theme: minima
 
 disqus:
-  shortname: denis-it
+  shortname: fppden
