@@ -21,10 +21,10 @@ skills:
     technologies: [Docker, AWS, Kubernetes, Node.js, Perl, PHP]
 
   - skill: Databases
-    technologies: [MySQL, MongoDB, CouchDB, DynamoDB]
+    technologies: [MySQL, InfluxDB, MongoDB, CouchDB, DynamoDB]
 
   - skill: Continious Integration
-    technologies: [Jenkins, Bamboo]
+    technologies: [CircleCI, Jenkins, Bamboo]
 
   - skill: Testing
     technologies: [TDD, BDD]
@@ -52,7 +52,7 @@ experience:
       "Documentation writing",
       "Working in a distributed team"
     ]
-    tags: [Scala, Akka, Cats, Shapeless]
+    tags: [Scala, Akka, Cats, Shapeless, Interactive Brokers]
 
   - from: May 2017
     to: Current
@@ -68,7 +68,7 @@ experience:
       "Documentation writing",
       "Working in a distributed team"
     ]
-    tags: [Scala, Slick, MySQL, Docker, Kubernetes]
+    tags: [Scala, Play, Slick, Quill, MySQL, Docker, Kubernetes]
 
   - from: Nov 2017
     to: Dec 2017
