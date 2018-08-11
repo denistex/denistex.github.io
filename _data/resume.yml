@@ -1,4 +1,4 @@
-_updated: "Feb 11, 2018"
+_updated: "Aug 11, 2018"
 
 summary:
     header: "Full-stack software engineer with 9+ years of experience."
@@ -7,6 +7,9 @@ summary:
 skills:
   - skill: JVM
     technologies: [Scala, Java SE, JavaFX, Android]
+
+  - skill: Mobile
+    technologies: [React Native]
 
   - skill: C/C++
     technologies: [Desktop, Embedded, Boost, Qt]
@@ -70,6 +73,19 @@ experience:
     ]
     tags: [Scala, Play, Slick, Quill, MySQL, Docker, Kubernetes]
 
+  - from: Mar 2018
+    to: Jun 2018
+    employer: Sarafan
+    href: http://sarafan-app.ru/
+    position: Tech lead
+    description: "Mobile application to find a serviceman through user contacts"
+    responsibilities: [
+      "Development planning",
+      "Architecture and design review",
+      "Code review"
+    ]
+    tags: [Elixir, Heroku, React Native, Firebase]
+
   - from: Nov 2017
     to: Dec 2017
     employer: FXEmpire
@@ -93,7 +109,6 @@ experience:
       "Project architecture and development"
     ]
     tags: [Perl, Telegram, Docker, Google Calendar API]
-    span: 2.2
 
   - from: Dec 2016
     to: Feb 2017
