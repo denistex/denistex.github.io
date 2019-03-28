@@ -1,3 +1,3 @@
 #!/bin/bash
 
-~/.gem/ruby/2.1.0/bin/bundle install --path ./.gems
+~/.gem/ruby/2.3.0/bin/bundle install --path ./.gems
