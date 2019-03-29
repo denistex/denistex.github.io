@@ -172,7 +172,7 @@ function email (doc, value) {
 }
 
 function section (doc, value) {
-  doc.moveDown(0.8)
+  doc.moveDown(1.6)
     .fontSize(16)
     .font('Times-Bold')
     .fillColor('gray')
