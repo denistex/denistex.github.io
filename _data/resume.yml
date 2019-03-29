@@ -1,30 +1,33 @@
-_updated: "Aug 11, 2018"
+_updated: "Mar 29, 2019"
 
 summary:
-    header: "Full-stack software engineer with 9+ years of experience."
-    text: "I mostly excited about functional programming, Scala and its ecosystem (Scalaz, Cats, Shapeless, Akka, Slick, Doobie, etc.), have good problems solving and projects responsibility skills. I am learning and evolving every day to provide actual and high-level results to the customers. I follow T-shaped skills model: besides Scala and its environment I am keeping up in C and Javascript / Node.js trends as well so can start working with them pretty quickly. I read news, listen podcasts and watch videos about different technologies to have wide area of thought (Perl, PHP, Python, Rust). Free to use Linux, Mac OS or Windows and ready to work with Git, AWS, Jenkins, Circle, Bugzilla, Redmine, Jira, Bamboo, Trello, GitHub, BitBucket and other commonly used services."
+    header: "Full-stack software engineer with 10+ years of experience."
+    text: "I am mostly excited about functional programming both on the client and server side. I like Scala and its ecosystem (ZIO, Cats, Shapeless, Akka, Slick, Doobie, etc.); in addition, I have good problems solving and projects responsibility skills. I am studying and evolving every day to provide actual and high-level results to the customer; actually, I follow T-shaped skills model: besides Scala and its environment I am also keeping up in JavaScript / Node.js trends therefore I can start working with them pretty quickly. I read news, listen podcasts and watch videos about different technologies to have wide area of thought (Perl, PHP, Python, Rust). I am free to use Linux, Mac OS or Windows and ready to work with Git, AWS, Jenkins, Circle, Bugzilla, Redmine, Jira, Bamboo, Trello, GitHub, BitBucket and other commonly used services."
 
 skills:
-  - skill: JVM
-    technologies: [Scala, Java SE, JavaFX, Android]
+  - skill: FP
+    technologies: [Scala, Cats, ZIO, Doobie]
+
+  - skill: Frontend
+    technologies: [HTML 5, CSS 3, ECMA 6, React]
 
   - skill: Mobile
     technologies: [React Native]
+
+  - skill: Databases
+    technologies: [MySQL, InfluxDB, MongoDB, CouchDB, DynamoDB]
+
+  - skill: Backend
+    technologies: [Node.js, Perl, PHP]
+
+  - skill: DevOps
+    technologies: [Docker, AWS, Kubernetes]
 
   - skill: C/C++
     technologies: [Desktop, Embedded, Boost, Qt]
 
   - skill: Python
     technologies: [IPython, SciPy, PyQt, PySide]
-
-  - skill: Frontend
-    technologies: [HTML 5, CSS 3, ECMA 6, Angular 4]
-
-  - skill: Backend
-    technologies: [Docker, AWS, Kubernetes, Node.js, Perl, PHP]
-
-  - skill: Databases
-    technologies: [MySQL, InfluxDB, MongoDB, CouchDB, DynamoDB]
 
   - skill: Continious Integration
     technologies: [CircleCI, Jenkins, Bamboo]
@@ -45,20 +48,40 @@ skills:
     technologies: [English (conversational), Russian (native)]
 
 experience:
-  - from: Oct 2017
+  - from: Dec 2018
     to: Current
+    employer: Eproval
+    href: https://www.eproval.com/
+    position: ReactJS Developer
+    description: "Leading online application and approval solution designed for local government - making it easier for citizens to apply and more cost efficient for government and partner agencies to review applications and issue approvals."
+    responsibilities: [
+      "Frontend development with JS and React",
+      "Documentation writing",
+      "Working in the distributed team"
+    ]
+    tags: [JS, React]
+
+  - from: Aug 2018
+    to: Current
+    employer: WildWeekend
+    position: Founder & Lead Software Engineer
+    description: "Web service designed for active people that don't want to miss fascinating activities in the area."
+    tags: [Scala, Play, Slick, Doobie, React, React Native]
+
+  - from: Oct 2017
+    to: Oct 2018
     employer: IBTrader
     position: Scala Developer
     description: "Platform for automated trading using Interactive Brokers API"
     responsibilities: [
       "Backend development with Scala and Akka Streams",
       "Documentation writing",
-      "Working in a distributed team"
+      "Working in the distributed team"
     ]
     tags: [Scala, Akka, Cats, Shapeless, Interactive Brokers]
 
   - from: May 2017
-    to: Current
+    to: Sep 2018
     employer: VATBox Ltd.
     href: https://vatbox.com/
     position: Scala Developer
@@ -69,7 +92,7 @@ experience:
       "Database schema development",
       "Projects deployment on AWS using Kubernetes",
       "Documentation writing",
-      "Working in a distributed team"
+      "Working in the distributed team"
     ]
     tags: [Scala, Play, Slick, Quill, MySQL, Docker, Kubernetes]
 
@@ -123,9 +146,9 @@ experience:
 
   - from: Feb 2016
     to: Jul 2016
-    employer: Self-employed
-    position: Founder & Software Engineer
-    description: "Online pet store deployment and development (now closed)"
+    employer: Dom-s-kotom
+    position: Founder & Lead Software Engineer
+    description: "Online pet store (now closed)"
     tags: [PHP, MySQL, WooCommerce, OpenCart]
 
   - from: Jan 2015
