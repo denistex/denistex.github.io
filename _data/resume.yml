@@ -1,15 +1,18 @@
-_updated: "Mar 29, 2019"
+_updated: "Apr 9, 2023"
 
 summary:
     header: "Full-stack software engineer with 10+ years of experience."
     text: "I am mostly excited about functional programming both on the client and server side. I like Scala and its ecosystem (ZIO, Cats, Shapeless, Akka, Slick, Doobie, etc.); in addition, I have good problems solving and projects responsibility skills. I am studying and evolving every day to provide actual and high-level results to the customer; actually, I follow T-shaped skills model: besides Scala and its environment I am also keeping up in JavaScript / Node.js trends therefore I can start working with them pretty quickly. I read news, listen podcasts and watch videos about different technologies to have wide area of thought (Perl, PHP, Python, Rust). I am free to use Linux, Mac OS or Windows and ready to work with Git, AWS, Jenkins, Circle, Bugzilla, Redmine, Jira, Bamboo, Trello, GitHub, BitBucket and other commonly used services."
 
 skills:
-  - skill: FP
-    technologies: [Scala, Cats, ZIO, Doobie]
-
   - skill: Frontend
     technologies: [HTML 5, CSS 3, ECMA 6, React]
+
+  - skill: Cloud
+    technologies: [Azure, AWS]
+
+  - skill: FP
+    technologies: [Scala, Cats, ZIO, Doobie]
 
   - skill: Mobile
     technologies: [React Native]
@@ -56,10 +59,25 @@ experience:
     description: "Leading online application and approval solution designed for local government - making it easier for citizens to apply and more cost efficient for government and partner agencies to review applications and issue approvals."
     responsibilities: [
       "Frontend development with JS and React",
+      "Network & Azure hosting infrastructure set up & maintenance",
       "Documentation writing",
       "Working in the distributed team"
     ]
-    tags: [JS, React]
+    tags: [JS, React, Azure]
+
+  - from: Jun 2021
+    to: Jan 2023
+    employer: EdgeSpy
+    position: Full Stack Software Engineer
+    description: "Fully Automated Trade Journaling Solution"
+    tags: [Scala, Play, Slick, Doobie, React, React Native]
+    responsibilities: [
+      "AWS infrastructure set up & maintenance with Terraform",
+      "DocumentDB set up & maintenance ",
+      "Backend development with JS and TS",
+      "Frontend development with JS and React"
+    ]
+    tags: [JS, TS, React, AWS, DocumentDB, Terraform]
 
   - from: Aug 2018
     to: Current
