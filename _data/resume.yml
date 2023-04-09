@@ -1,7 +1,7 @@
 _updated: "Apr 9, 2023"
 
 summary:
-    header: "Full-stack software engineer with 10+ years of experience."
+    header: "Full-stack software engineer with 12+ years of experience."
     text: "I am mostly excited about functional programming both on the client and server side. I like Scala and its ecosystem (ZIO, Cats, Shapeless, Akka, Slick, Doobie, etc.); in addition, I have good problems solving and projects responsibility skills. I am studying and evolving every day to provide actual and high-level results to the customer; actually, I follow T-shaped skills model: besides Scala and its environment I am also keeping up in JavaScript / Node.js trends therefore I can start working with them pretty quickly. I read news, listen podcasts and watch videos about different technologies to have wide area of thought (Perl, PHP, Python, Rust). I am free to use Linux, Mac OS or Windows and ready to work with Git, AWS, Jenkins, Circle, Bugzilla, Redmine, Jira, Bamboo, Trello, GitHub, BitBucket and other commonly used services."
 
 skills:
@@ -55,15 +55,14 @@ experience:
     to: Current
     employer: Eproval
     href: https://www.eproval.com/
-    position: ReactJS Developer
+    position: React/Azure Developer
     description: "Leading online application and approval solution designed for local government - making it easier for citizens to apply and more cost efficient for government and partner agencies to review applications and issue approvals."
     responsibilities: [
       "Frontend development with JS and React",
       "Network & Azure hosting infrastructure set up & maintenance",
-      "Documentation writing",
-      "Working in the distributed team"
+      "Documentation writing"
     ]
-    tags: [JS, React, Azure]
+    tags: [JS, React, C#, .NET, Azure]
 
   - from: Jun 2021
     to: Jan 2023
@@ -73,7 +72,7 @@ experience:
     tags: [Scala, Play, Slick, Doobie, React, React Native]
     responsibilities: [
       "AWS infrastructure set up & maintenance with Terraform",
-      "DocumentDB set up & maintenance ",
+      "DocumentDB set up & maintenance",
       "Backend development with JS and TS",
       "Frontend development with JS and React"
     ]
@@ -93,8 +92,7 @@ experience:
     description: "Platform for automated trading using Interactive Brokers API"
     responsibilities: [
       "Backend development with Scala and Akka Streams",
-      "Documentation writing",
-      "Working in the distributed team"
+      "Documentation writing"
     ]
     tags: [Scala, Akka, Cats, Shapeless, Interactive Brokers]
 
@@ -109,8 +107,7 @@ experience:
       "Backend development with Scala, Akka and Slick",
       "Database schema development",
       "Projects deployment on AWS using Kubernetes",
-      "Documentation writing",
-      "Working in the distributed team"
+      "Documentation writing"
     ]
     tags: [Scala, Play, Slick, Quill, MySQL, Docker, Kubernetes]
 
@@ -181,10 +178,10 @@ experience:
       "CouchDB interaction development",
       "Jenkins CI deployment and support"
     ]
-    tags: [Java, JavaFX, Android, CouchDB, Jenkins, AWS]
+    tags: [JavaFX, Node.js, Express.js, Android, CouchDB, AWS]
 
-  - from: Dec 2011
-    to: Dec 2014
+  - from: Jan 2014
+    to: Jan 2015
     employer: TradingView
     href: https://tradingview.com/
     position: Software Engineer
@@ -195,6 +192,17 @@ experience:
       "Specialized language development with Java and ANTLR"
     ]
     tags: [HTML, JS, Java, Node.js, Python, Jenkins, Docker, Scrum]
+
+  - from: Mar 2014
+    to: Jul 2014
+    employer: TurboHeads
+    position: Software Engineer
+    description: "MTS Drive desktop application"
+    responsibilities: [
+      "Desktop application development with C++ and Qt 4",
+      "Unit-testing workflow integration"
+    ]
+    tags: [C++, Qt]
 
   - from: Feb 2012
     to: Jan 2013
@@ -208,7 +216,7 @@ experience:
     tags: [Python, PyQt]
 
   - from: Jul 2010
-    to: Nov 2011
+    to: Dec 2013
     employer: eSignal
     href: http://www.esignal.com/
     position: Software Engineer
@@ -217,7 +225,7 @@ experience:
       "Chart module development",
       "Statistics gathering subsystem development, deployment and support"
     ]
-    tags: [C++, Qt 4, Java, MySQL, Jenkins, Scrum]
+    tags: [C++, Qt, C#, Java, JSP, MySQL, Jenkins, Jira, Scrum]
 
 education:
   - from: Sep 2005
