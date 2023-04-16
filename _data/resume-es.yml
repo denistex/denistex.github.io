@@ -1,0 +1,241 @@
+_updated: "abr 9, 2023"
+
+summary:
+  header: "Ingeniero de software full-stack con más de 12 años de experiencia."
+  text: "Me entusiasma sobre todo la programación funcional tanto en el lado del cliente como del servidor. Me gusta Scala y su ecosistema (ZIO, Cats, Shapeless, Akka, Slick, Doobie, etc.); además, tengo buenas habilidades para resolver problemas y responsabilidad en proyectos. Estoy estudiando y evolucionando cada día para evolucionar cada día para ofrecer resultados reales y de alto nivel al cliente; de hecho, sigo el modelo de habilidades en forma de T: además de Scala y su entorno, también me mantengo al día en JavaScript / Node java. en las tendencias de JavaScript / Node.js por lo que puedo empezar a trabajar con ellos bastante rápido. Leo noticias, escucho podcasts y veo vídeos sobre diferentes tecnologías para tener una amplia área de pensamiento (Perl, PHP, Python, Rust). Soy libre de usar Linux, Mac OS o Windows y estoy listo para trabajar con Git, AWS, Jenkins, Circle, Bugzilla, Redmine, Jira, Bamboo, Trello, GitHub, BitBucket y otros servicios de uso común."
+
+skills:
+  - skill: Frontend
+    technologies: [HTML 5, CSS 3, ECMA 6, React]
+
+  - skill: Nube
+    technologies: [Azure, AWS]
+
+  - skill: FP
+    technologies: [Scala, Cats, ZIO, Doobie]
+
+  - skill: Móvil
+    technologies: [React Native]
+
+  - skill: Bases de datos
+    technologies: [MySQL, InfluxDB, MongoDB, CouchDB, DynamoDB]
+
+  - skill: Lado servidor
+    technologies: [Node.js, Perl, PHP]
+
+  - skill: DevOps
+    technologies: [Docker, AWS, Kubernetes]
+
+  - skill: C/C++
+    technologies: [Escritorio, Integrado, Boost, Qt]
+
+  - skill: Python
+    technologies: [IPython, SciPy, PyQt, PySide]
+
+  - skill: Integración Continua
+    technologies: [CircleCI, Jenkins, Bamboo]
+
+  - skill: Pruebas
+    technologies: [TDD, BDD]
+
+  - skill: Comercio electrónico
+    technologies: [OpenCart, WooCommerce]
+
+  - skill: Herramientas
+    technologies: [Git, Vim, Bash, ADR]
+
+  - skill: Ágil
+    technologies: [Scrum, Kanban]
+
+  - skill: Idiomas
+    technologies: [Inglés (conversacional), Ruso (nativo)]
+
+experience:
+  - from: dic 2018
+    to: actual
+    employer: Eproval
+    href: https://www.eproval.com/
+    position: Desarrollador React/Azure
+    description: "Solución líder de solicitud y aprobación en línea diseñada para la administración local, que facilita a los ciudadanos la presentación de solicitudes y hace más rentable para la administración y los organismos asociados la revisión de las solicitudes y la emisión de las aprobaciones."
+    responsibilities: [
+      "Desarrollo frontend con JS y React",
+      "Configuración y mantenimiento de infraestructura de red y hosting Azure",
+      "Redacción de documentación"
+    ]
+    tags: [JS, React, C#, .NET, Azure]
+
+  - from: jun 2021
+    to: enero 2023
+    employer: EdgeSpy
+    position: Ingeniero de Software Full Stack
+    description: "Solución de registro de operaciones totalmente automatizada"
+    tags: [Scala, Play, Slick, Doobie, React, React Native]
+    responsibilities: [
+      "Configuración y mantenimiento de la infraestructura de AWS con Terraform",
+      "Configuración y mantenimiento de DocumentDB",
+      "Desarrollo backend con JS y TS",
+      "Desarrollo frontend con JS y React"
+    ]
+    tags: [JS, TS, React, AWS, DocumentDB, Terraform]
+
+  - from: agosto 2018
+    to: oct 2018
+    employer: WildWeekend
+    position: Fundador e Ingeniero Jefe de Software
+    description: "Servicio web diseñado para personas activas que no quieren perderse las fascinantes actividades de la zona."
+    tags: [Scala, Play, Slick, Doobie, React, React Native]
+
+  - from: oct 2017
+    to: oct 2018
+    employer: IBTrader
+    position: Desarrollador Scala
+    description: "Plataforma de negociación automatizada mediante la API de Interactive Brokers"
+    responsibilities: [
+      "Desarrollo backend con Scala y Akka Streams",
+      "Redacción de documentación"
+    ]
+    tags: [Scala, Akka, Cats, Shapeless, Interactive Brokers]
+
+  - from: mayo 2017
+    to: set 2018
+    employer: VATBox Ltd.
+    href: https://vatbox.com/
+    position: Desarrollador Scala
+    description: "Proveedor mundial de recuperación automática del IVA basado en la nube"
+    responsibilities: [
+      "Proyectos liderados y responsabilidad",
+      "Desarrollo backend con Scala, Akka y Slick",
+      "Desarrollo de esquemas de base de datos",
+      "Despliegue de proyectos en AWS usando Kubernetes",
+      "Redacción de documentación"
+    ]
+    tags: [Scala, Play, Slick, Quill, MySQL, Docker, Kubernetes]
+
+  - from: marzo 2018
+    to: jun 2018
+    employer: Sarafan
+    href: http://sarafan-app.ru/
+    position: Director técnico
+    description: "Aplicación móvil para encontrar un técnico a través de los contactos del usuario"
+    responsibilities: [
+      "Planificación del desarrollo",
+      "Revisión de arquitectura y diseño",
+      "Revisión de códigos"
+    ]
+    tags: [Elixir, Heroku, React Native, Firebase]
+
+  - from: nov 2017
+    to: dic 2017
+    employer: FXEmpire
+    href: https://www.fxempire.com/
+    position: Desarrollador Node.js
+    description: "Alimentación de datos personalizada para la biblioteca de gráficos TradingView"
+    responsibilities: [
+      "Desarrollo de servicio Node.js Rest API usando Express",
+      "Trabajando con Mongo DB usando Mongoose"
+    ]
+    tags: [Node.js, Express, Mongo, Mongoose]
+
+  - from: oct 2016
+    to: feb 2017
+    employer: FabLab61 Booking Bot
+    href: https://github.com/FabLab61/bookingbot
+    position: Ingeniero jefe de software
+    description: "Bot de Telegram para facilitar la reserva de recursos del FabLab (pet project)"
+    responsibilities: [
+      "Arquitectura y desarrollo de proyectos"
+    ]
+    tags: [Perl, Telegram, Docker, Google Calendar API]
+
+  - from: dic 2016
+    to: feb 2017
+    employer: Mountain Interactive Inc.
+    href: http://mountaininteractive.ca/
+    position: Ingeniero de software
+    description: "Desarrollo del sitio web de Stockscores"
+    responsibilities: [
+      "Integración de la biblioteca de gráficos TradingView"
+    ]
+    tags: [JS, Node.js, Docker]
+
+  - from: feb 2016
+    to: jul 2016
+    employer: Dom-s-kotom
+    position: Fundador e Ingeniero Jefe de Software
+    description: "Tienda de mascotas en línea (ahora cerrada)"
+    tags: [PHP, MySQL, WooCommerce, OpenCart]
+
+  - from: enero 2015
+    to: dic 2015
+    employer: Boxy POS
+    href: https://www.boxypos.com/
+    position: Ingeniero de software
+    description: "Punto de venta gratuito para restaurantes y cafeterías"
+    responsibilities: [
+      "Desarrollo de software de escritorio con JavaFX",
+      "Desarrollo de software Android con Java",
+      "Desarrollo de interacción CouchDB",
+      "Despliegue y soporte de Jenkins CI"
+    ]
+    tags: [JavaFX, Node.js, Express.js, Android, CouchDB, AWS]
+
+  - from: enero 2014
+    to: enero 2015
+    employer: TradingView
+    href: https://tradingview.com/
+    position: Ingeniero de software
+    description: "Red en la que los operadores activos intercambian ideas para maximizar los beneficios"
+    responsibilities: [
+      "Desarrollo frontend con HTML, CSS y JS",
+      "Desarrollo backend con Java, Python y Node.js",
+      "Desarrollo de lenguajes especializados con Java y ANTLR"
+    ]
+    tags: [HTML, JS, Java, Node.js, Python, Jenkins, Docker, Scrum]
+
+  - from: marzo 2014
+    to: jul 2014
+    employer: TurboHeads
+    position: Ingeniero de software
+    description: "Aplicación de escritorio MTS Drive"
+    responsibilities: [
+      "Desarrollo de aplicaciones de escritorio con C++ y Qt 4",
+      "Integración de flujos de trabajo de pruebas unitarias"
+    ]
+    tags: [C++, Qt]
+
+  - from: feb 2012
+    to: enero 2013
+    employer: RoastLog
+    href: https://roastlog.com/
+    position: Ingeniero de software
+    description: "Software que ayuda a controlar el proceso de tostado del café"
+    responsibilities: [
+      "Desarrollo de aplicaciones de escritorio con Python y PyQt binding"
+    ]
+    tags: [Python, PyQt]
+
+  - from: jul 2010
+    to: dic 2013
+    employer: eSignal
+    href: http://www.esignal.com/
+    position: Ingeniero de software
+    description: "Programa de sobremesa de gráficos bursátiles y plataforma de negociación"
+    responsibilities: [
+      "Desarrollo de módulos gráficos",
+      "Desarrollo, implantación y asistencia del subsistema de recopilación de estadísticas"
+    ]
+    tags: [C++, Qt, C#, Java, JSP, MySQL, Jenkins, Jira, Scrum]
+
+education:
+  - from: set 2005
+    to: jul 2010
+    school: "Universidad Técnica Estatal de Don"
+    href: http://www.donstu.ru/en/
+    description: "Licenciatura en técnicas informáticas y software de sistemas automatizados, diploma con matrícula de honor."
+
+contacts:
+  location: Rostov del Don, Rusia
+  telegram: denistex
+  linkedin: denistex
+  upwork: _~01b439dfd5257d9801
+  twitter: denistex
