@@ -1,8 +1,8 @@
 _updated: "Apr 9, 2023"
 
 summary:
-    header: "Full-stack software engineer with 12+ years of experience."
-    text: "I am mostly excited about functional programming both on the client and server side. I like Scala and its ecosystem (ZIO, Cats, Shapeless, Akka, Slick, Doobie, etc.); in addition, I have good problems solving and projects responsibility skills. I am studying and evolving every day to provide actual and high-level results to the customer; actually, I follow T-shaped skills model: besides Scala and its environment I am also keeping up in JavaScript / Node.js trends therefore I can start working with them pretty quickly. I read news, listen podcasts and watch videos about different technologies to have wide area of thought (Perl, PHP, Python, Rust). I am free to use Linux, Mac OS or Windows and ready to work with Git, AWS, Jenkins, Circle, Bugzilla, Redmine, Jira, Bamboo, Trello, GitHub, BitBucket and other commonly used services."
+  header: "Full-stack software engineer with 12+ years of experience."
+  text: "I am mostly excited about functional programming both on the client and server side. I like Scala and its ecosystem (ZIO, Cats, Shapeless, Akka, Slick, Doobie, etc.); in addition, I have good problems solving and projects responsibility skills. I am studying and evolving every day to provide actual and high-level results to the customer; actually, I follow T-shaped skills model: besides Scala and its environment I am also keeping up in JavaScript / Node.js trends therefore I can start working with them pretty quickly. I read news, listen podcasts and watch videos about different technologies to have wide area of thought (Perl, PHP, Python, Rust). I am free to use Linux, Mac OS or Windows and ready to work with Git, AWS, Jenkins, Circle, Bugzilla, Redmine, Jira, Bamboo, Trello, GitHub, BitBucket and other commonly used services."
 
 skills:
   - skill: Frontend
@@ -135,7 +135,6 @@ experience:
       "Working with Mongo DB using Mongoose"
     ]
     tags: [Node.js, Express, Mongo, Mongoose]
-
 
   - from: Oct 2016
     to: Feb 2017
